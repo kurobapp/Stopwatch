@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイマー & ストップウォッチ</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="mode-title">ストップウォッチ</h1>
+        
+        <div id="time-display">00:00:00</div>
+        
+        <div id="timer-input">
+            <button class="time-adjust" data-increase="1">＋1分</button>
+            <button class="time-adjust" data-increase="2">＋2分</button>
+            <button class="time-adjust" data-increase="3">＋3分</button>
+            <button class="time-adjust" data-increase="6">＋6分</button>
+            <button class="time-adjust" data-increase="11">＋11分</button>
+
+            <button class="time-adjust-seconds" data-increase="5">＋5秒</button>
+            <button class="time-adjust-seconds" data-increase="10">＋10秒</button>
+            <button class="time-adjust-seconds" data-increase="20">＋20秒</button>
+            <button class="time-adjust-seconds" data-increase="40">＋40秒</button>
+        </div>
+
+        
+        <div class="buttons">
+            <button id="start-btn">▶ スタート</button>
+            <button id="stop-btn">⏸ ストップ</button>
+            <button id="reset-btn">🔄 リセット</button>
+        </div>
+
+        <button id="toggle-mode-btn">⏳ タイマーに切り替え</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
