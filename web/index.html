@@ -13,27 +13,19 @@
         
         <div id="time-display">00:00:00</div>
         
+        <!-- 分と秒の入力フィールド -->
         <div id="timer-input">
-            <button class="time-adjust" data-increase="1">＋1分</button>
-            <button class="time-adjust" data-increase="2">＋2分</button>
-            <button class="time-adjust" data-increase="3">＋3分</button>
-            <button class="time-adjust" data-increase="6">＋6分</button>
-            <button class="time-adjust" data-increase="11">＋11分</button>
-
-            <button class="time-adjust-seconds" data-increase="5">＋5秒</button>
-            <button class="time-adjust-seconds" data-increase="10">＋10秒</button>
-            <button class="time-adjust-seconds" data-increase="20">＋20秒</button>
-            <button class="time-adjust-seconds" data-increase="40">＋40秒</button>
+            <input type="number" id="timer-minutes" value="0" min="0" step="1" placeholder="分">
+            <input type="number" id="timer-seconds" value="0" min="0" step="1" placeholder="秒">
         </div>
 
-        
         <div class="buttons">
-            <button id="start-btn">▶ スタート</button>
-            <button id="stop-btn">⏸ ストップ</button>
-            <button id="reset-btn">🔄 リセット</button>
+            <button id="main-btn">スタート/ストップ</button>
+            <button id="reset-btn">リセット</button>
         </div>
 
-        <button id="toggle-mode-btn">⏳ タイマーに切り替え</button>
+        <button id="toggle-mode-btn">タイマーに切り替え</button>
+        <button id="study-btn">勉強開始</button>
     </div>
 
     <script src="./script.js"></script>
